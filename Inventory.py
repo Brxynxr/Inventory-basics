@@ -5,14 +5,22 @@ registrarP = input("desea registrar un producto?: yes/no ")
 while registrarP == "yes":
     nombre = input("ingrese nombre del producto: ")
     
-    precio = None
+    #Validación de precio
+    precio = None  
+    #None es un valor vacío
+    #Lo usé para indicarle al bucle que todavía no hay un dato válido y que debe seguir pidiendolo
+    
     while precio == None:
         try:
             precio = float(input("ingrese precio del producto: "))
         except ValueError:
             print("Error: informacion invalida")
-          
+            
+    #Validación de cantidad     
     cantidad = None
+    # Al igual que con el precio
+    # Cantidad empieza en None (vacío) para que el bucle siga pidiendo el dato hasta recibir un número válido
+    
     while cantidad == None:
         try:
             cantidad = int(input("ingrese cantidad de unidades: "))
@@ -33,9 +41,9 @@ while registrarP == "yes":
 print("Registro Finalizado")
 
 """
------FUNCION DEL PROGRAMA-----
- - Este programa le pide al usuario el nombre, precio y cantidad de un producto.
- - Valida que el precio y la cantidad sean números correctos antes de usarlos.
- - Luego calcula el costo total y muestra todo en pantalla de forma ordenada.
- - Se puede repetir el proceso para registrar varios productos seguidos.
+FUNCION DEL PROGRAMA
+Es un programa que te permite registrar productos en un inventario
+de forma sencilla. Ingresas el nombre, precio y cantidad, y el sistema
+se encarga de validar los datos, calcular el costo total y mostrarte
+el resultado en pantalla.
 """
