@@ -1,41 +1,41 @@
 # 📦 Inventory-basics
 
-## 📄 Descripción del proyecto
-Es un programa que te permite registrar productos en un inventario
-de forma sencilla. Ingresas el nombre, precio y cantidad, y el sistema
-se encarga de validar los datos, calcular el costo total y mostrarte
-el resultado en pantalla.
+## 📄 Project Description
+A program that lets you register products in an inventory in a simple way. You enter the name, price, and quantity, and the system handles data validation, calculates the total cost, and displays the result on screen.
 
-## ⚙️ ¿Cómo funciona?
-1. Pregunta si deseas registrar un producto
-2. Solicita el nombre, precio y cantidad, validando que los datos numéricos sean correctos
-3. Calcula el costo total multiplicando precio por cantidad
-4. Muestra el resultado en pantalla con el nombre, precio, cantidad y total
-5. Pregunta si deseas registrar otro producto, si la respuesta es "no" el programa termina
-
+## ⚙️ How it works
+1. Asks if you want to register a product
+2. Requests the name, price, and quantity, validating that numeric data is correct
+3. Calculates the total cost by multiplying price by quantity
+4. Displays the result on screen with the name, price, quantity, and total
+5. Asks if you want to register another product — if the answer is "no", the program ends
 
 ---
 
-## 🛠️ Tecnologías usadas
+## 🛠️ Technologies used
 - Python 3
 
 ---
 
-## ▶️ Cómo ejecutar el código
-1. Asegúrate de tener Python instalado
-2. Descarga el archivo `Inventory.py`
-3. Abre la terminal y ejecuta:
+## ▶️ How to run the code
+1. Make sure you have Python installed
+2. Download the `Inventory.py` file
+3. Open the terminal and run:
+```
 python Inventory.py
----
-
-## 🔀 Diagrama de flujo
-
-
-![Diagrama de flujo](Diagrama_flujo.png)
-
-
+```
 
 ---
 
-## ✍️ Autor
+## 🔀 Flowchart
+
+
+
+![Flowchart](Diagrama_flujo.png)
+
+
+
+---
+
+## ✍️ Author
 Breyner — 2026
