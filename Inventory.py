@@ -1,49 +1,47 @@
-# Preguntamos al usuario si quiere iniciar el registro
-registrarP = input("desea registrar un producto?: yes/no ")
+# We ask the user if they want to start the registration
+register = input("do you want to register a product?: yes/no ").lower()
 
-# El bucle se ejecutará mientras la respuesta sea "yes"
-while registrarP == "yes":
-    nombre = input("ingrese nombre del producto: ")
+# The loop will run while the answer is "yes"
+while register == "yes":
+    name = input("enter product name: ")
     
-    #Validación de precio
-    precio = None  
-    #None es un valor vacío
-    #Lo usé para indicarle al bucle que todavía no hay un dato válido y que debe seguir pidiendolo
+    # Price validation
+    price = None  
+    # None is an empty value
+    # I used it to tell the loop there is no valid data yet and it should keep asking
     
-    while precio == None:
+    while price == None:
         try:
-            precio = float(input("ingrese precio del producto: "))
+            price = float(input("enter product price: "))
         except ValueError:
-            print("Error: informacion invalida")
+            print("Error: invalid data")
             
-    #Validación de cantidad     
-    cantidad = None
-    # Al igual que con el precio
-    # Cantidad empieza en None (vacío) para que el bucle siga pidiendo el dato hasta recibir un número válido
+    # Quantity validation     
+    quantity = None
+    # Same as with price
+    # Quantity starts as None (empty) so the loop keeps asking until it gets a valid number
     
-    while cantidad == None:
+    while quantity == None:
         try:
-            cantidad = int(input("ingrese cantidad de unidades: "))
+            quantity = int(input("enter number of units: "))
         except ValueError:
-            print("Error: informacion invalida")
+            print("Error: invalid data")
 
-    # Calculamos el costo total multiplicando precio por cantidad
-    costo_total = precio * cantidad
+    # We calculate the total cost by multiplying price by quantity
+    total_cost = price * quantity
 
-    # Mostramos el resumen ordenado
-    print("PRODUCTO REGISTRADO".center(64, "-"))
-    print(f"Producto: {nombre} | Precio: {precio} | Cantidad: {cantidad} | total: {costo_total}")
+    # We display the ordered summary
+    print("REGISTERED PRODUCT".center(64, "-"))
+    print(f"Product: {name} | Price: {price} | Quantity: {quantity} | Total: {total_cost}")
     print("-" * 64)
    
-    # Preguntamos si se desea continuar para decidir si el bucle se repite o termina
-    registrarP = input("desea registrar otro producto?: yes/no ")
-   
-print("Registro Finalizado")
+    # We ask if they want to continue to decide if the loop repeats or ends
+    register = input("do you want to register another product?: yes/no ").lower()
 
 """
-FUNCION DEL PROGRAMA
-Es un programa que te permite registrar productos en un inventario
-de forma sencilla. Ingresas el nombre, precio y cantidad, y el sistema
-se encarga de validar los datos, calcular el costo total y mostrarte
-el resultado en pantalla.
+PROGRAM FUNCTION
+It is a program that allows you to register products in an inventory
+easily. You enter the name, price and quantity, and the system
+validates the data, calculates the total cost and displays
+the result on screen.
 """
