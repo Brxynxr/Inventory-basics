@@ -38,6 +38,8 @@ while register == "yes":
    
     # We ask if they want to continue to decide if the loop repeats or ends
     register = input("do you want to register another product?: yes/no ").lower()
+    if register == "no":
+        print("ending program...")
 
 """
 PROGRAM FUNCTION
