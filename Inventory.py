@@ -1,4 +1,5 @@
 # We ask the user if they want to start the registration
+print ("----------------INVENTORY-----------------")
 register = input("do you want to register a product?: yes/no ").lower()
 
 # The loop will run while the answer is "yes"
